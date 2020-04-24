@@ -1,0 +1,14 @@
+
+sentinel:
+  dashboard:
+    #启用zookeeper动态数据源
+    zk:
+      enabled: true
+      host: 192.168.131.154:2181
+      ruleRootPath: /sentinel_rule
+
+    #influxdb存储监控数据
+    influxdb:
+      url: http://localhost:8086
+      username: admin
+      password: admin
